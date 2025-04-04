@@ -1,6 +1,6 @@
 import {useStoreListener} from "@/hooks/use-store-listener.ts";
 import {useState} from "react";
-import { useUserStoreZustand } from "./provider/user-zustand-context";
+import {useUserStoreZustand} from "./provider/user-zustand-context";
 
 export const ActionChangeNameZustand = () => {
     const [count, setCount] = useState(0)
@@ -9,12 +9,11 @@ export const ActionChangeNameZustand = () => {
         store,
         state => state.name,
         (s) => {
-            // todo s
             console.log('name is: ', s)
             setCount(prevState => prevState + 1);
         }
     )
     return <div>
-      Re-render when  name change :{count}
+        Re-render when name change :{count}
     </div>
 }
