@@ -1,4 +1,9 @@
-# Rsbuild project
+# Zustand Context project
+
+This source mainly compares the problem that using zustand to create context will be more optimized for re-render than
+the normal React Context API
+
+![Compare](./public/context.gif)
 
 ## Setup
 
